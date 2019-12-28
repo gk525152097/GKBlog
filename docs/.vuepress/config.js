@@ -1,10 +1,10 @@
-const { description } = require('../../package')
+const { name, description } = require('../../package')
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: name,
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -34,30 +34,63 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: '问题',
+        link: '/problems/'
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: '学习',
+        link: '/study/'
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: '个人',
+        link: '/myself',
       }
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
+    siderbar: [
+      {
+        title: '首页',
+        path: '/'
+      },
+      {
+        title: '问题',
+        path: '/problems/',
+        children: [
             '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
+            ['20191228', '20191228']
+        ]
+      },
+      {
+        title: '学习',
+        path: '/study/',
+        children: [
+          ''
+        ]
+      },
+      {
+        title: '个人',
+        path: '/myself'
+      },
+    ]
+    // sidebar: {
+    //   '/problems/': [
+    //     {
+    //       title: '问题',
+    //       collapsable: false,
+    //       children: [
+    //         '',
+    //       ]
+    //     }
+    //   ],
+    //   '/study/': [
+    //     {
+    //       title: '学习',
+    //       collapsable: false,
+    //       children: [
+    //         '',
+    //       ]
+    //     }
+    //   ],
+    // }
   },
 
   /**

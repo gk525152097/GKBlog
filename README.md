@@ -2,12 +2,8 @@
 
 > 
 
-## Development
-
 ```bash
-yarn dev
-yarn build
+gk黎光的个人博客
+基于vuepress搭建的静态博客
 ```
-
-For more details, please head VuePress's [documentation](https://v1.vuepress.vuejs.org/).
 
