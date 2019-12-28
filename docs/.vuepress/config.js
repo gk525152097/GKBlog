@@ -1,10 +1,10 @@
-const { name, description } = require('../../package')
+const { description } = require('../../package')
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: name,
+  title: 'GK黎光',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
