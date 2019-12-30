@@ -27,11 +27,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+
     nav: [
       {
         text: '问题',
@@ -46,24 +42,25 @@ module.exports = {
         link: '/myself',
       }
     ],
-    siderbar: [
+    sidebar: [
       {
         title: '首页',
         path: '/'
       },
       {
         title: '问题',
-        path: '/problems/',
+        path: '/problems',
+        collapsable: false,
         children: [
-            '',
-            ['20191228', '20191228']
+          ['/problems/20191228', '20191228'],
         ]
       },
       {
         title: '学习',
-        path: '/study/',
+        path: '/study',
+        collapsable: false,
         children: [
-          ''
+          ['/study/20191228', 'vuepress'],
         ]
       },
       {
@@ -71,33 +68,13 @@ module.exports = {
         path: '/myself'
       },
     ]
-    // sidebar: {
-    //   '/problems/': [
-    //     {
-    //       title: '问题',
-    //       collapsable: false,
-    //       children: [
-    //         '',
-    //       ]
-    //     }
-    //   ],
-    //   '/study/': [
-    //     {
-    //       title: '学习',
-    //       collapsable: false,
-    //       children: [
-    //         '',
-    //       ]
-    //     }
-    //   ],
-    // }
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
+  // plugins: [
+  //   '@vuepress/plugin-back-to-top',
+  //   '@vuepress/plugin-medium-zoom',
+  // ]
 }
