@@ -60,6 +60,7 @@ module.exports = {
         path: '/study',
         collapsable: false,
         children: [
+          ['/study/20200107', '基于vue的前端框架基础'],
           ['/study/20191231', '小程序请求封装'],
           ['/study/20191228', 'vuepress'],
         ]
