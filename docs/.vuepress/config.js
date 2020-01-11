@@ -52,7 +52,7 @@ module.exports = {
         path: '/problems',
         collapsable: false,
         children: [
-          ['/problems/20191228', '20191228'],
+          ['/problems/20200111', '小程序构建问题'],
         ]
       },
       {
