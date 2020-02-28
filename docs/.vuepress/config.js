@@ -53,6 +53,8 @@ module.exports = {
         collapsable: false,
         children: [
           ['/problems/20200111', '小程序构建问题'],
+          ['/problems/20200120', 'css主题配置'],
+          // ['/problems/20200228', '小程序构建问题'],
         ]
       },
       {
@@ -60,6 +62,7 @@ module.exports = {
         path: '/study',
         collapsable: false,
         children: [
+          ['/study/20200228', '小程序基础封装'],
           ['/study/20200111', '小程序确认页封装'],
           ['/study/20200107', '基于vue的前端框架基础'],
           ['/study/20191231', '小程序请求封装'],
